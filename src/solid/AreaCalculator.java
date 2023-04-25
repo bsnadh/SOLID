@@ -18,11 +18,6 @@ public class AreaCalculator {
     }
     // We are violating the first principle here
     // These two methods should be in separate class
-    public String json (List<Object> shapes) {
-        return "{sum: %s}".formatted(sum(shapes));
-    }
-    public String csv (List<Object> shapes) {
-        return "sum, %s".formatted(sum(shapes));
-    }
+
 
 }
