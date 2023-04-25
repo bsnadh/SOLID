@@ -10,14 +10,14 @@ public class Main {
         Cube cube = new Cube();
         Rectangle rectangle = new Rectangle();
         ShapesPrinter printer = new ShapesPrinter();
+        NoShape noShape = new NoShape();
         List<Shape> shapes = List.of(
+                noShape,
                 circle,
                 square,
                 cube,
                 rectangle
         );
-        // Resolving open/closed
-        // Classes are open for extension
         int sum = areaCalculator.sum(shapes);
         System.out.println(printer.json(sum));
         System.out.println(printer.csv(sum));

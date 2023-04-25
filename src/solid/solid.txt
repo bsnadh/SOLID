@@ -8,3 +8,8 @@
 
     In other words, you should not have to rewrite an
     existing class for implementing a feature.
+
+--> Liskov Substitution
+    This means that every subclass or
+    derived class should be substitutable for their
+    base or parent class.
