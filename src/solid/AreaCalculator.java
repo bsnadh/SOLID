@@ -13,6 +13,10 @@ public class AreaCalculator {
             if(shape instanceof Circle) {
                 sum += Math.PI * Math.pow(((Circle) shape).getRadius(),2);
             }
+            // Each time we have a shape, we're adding a new if statement.
+            if(shape instanceof Cube) {
+                // logic
+            }
         }
         return sum;
     }
