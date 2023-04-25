@@ -16,8 +16,4 @@ public class AreaCalculator {
         }
         return sum;
     }
-    // We are violating the first principle here
-    // These two methods should be in separate class
-
-
 }
