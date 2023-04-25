@@ -7,8 +7,17 @@ public class Main {
         AreaCalculator areaCalculator = new AreaCalculator();
         Circle circle = new Circle(10);
         Square square = new Square(12);
+        Cube cube = new Cube();
+        Rectangle rectangle = new Rectangle();
         ShapesPrinter printer = new ShapesPrinter();
-        List<Object> shapes = List.of(circle,square);
+        List<Shape> shapes = List.of(
+                circle,
+                square,
+                cube,
+                rectangle
+        );
+        // Resolving open/closed
+        // Classes are open for extension
         int sum = areaCalculator.sum(shapes);
         System.out.println(printer.json(sum));
         System.out.println(printer.csv(sum));
