@@ -10,10 +10,8 @@ public class Main {
         Cube cube = new Cube();
         Rectangle rectangle = new Rectangle();
         ShapesPrinter printer = new ShapesPrinter();
-        NoShape noShape = new NoShape();
-        List<Shape> shapes = List.of(
-                noShape,
-                circle,
+         List<Shape> shapes = List.of(
+                 circle,
                 square,
                 cube,
                 rectangle
